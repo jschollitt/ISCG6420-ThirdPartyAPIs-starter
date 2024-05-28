@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Exercise - JSON & Third Party APIs</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Link jQuery 3.7.X -->
+
+
+    <!-- Link PokeAPI JS library -->
+
+</head>
+
+
+<body>
+    <main>
+        <header>
+            <h1>Exercise - JSON & Third Party APIs</h1>
+        </header>
+
+        <!-- Section 1 -->
+        <section id="ex1" class="txt-center">
+            <h2 class="underline">JS Object to JSON</h2>
+            <subtitle class="row">Populate the form and click "Add Person" to display JSON</subtitle>
+            <div id="ex1form" class="content container-half card">
+                <div id="ex1Loader">
+                    <span class="loader"></span>
+                </div>
+                <div class="container "> 
+                    <label for="fname"><strong>First name</strong></label>
+                    <input id="fname" type="text" placeholder="Enter first name" name="fname" required>
+                    <label for="lname"><strong>Last name</strong></label>
+                    <input id="lname" type="text" placeholder="Enter last name" name="lname" required>
+                    <label for="mail"><strong>Email</strong></label>
+                    <input id="email" type="text" placeholder="Enter Email" name="mail" required>
+                </div>
+                <div class="buttonRow">
+                    <button id="ex1randomPerson" type="button">Populate Form</button>
+                    <button id="ex1addPerson" type="button">Add Person</button>
+                    <button id="ex1clearData" type="button">Clear Person Records</button>
+                </div>
+            </div>
+            <div class="container-half card">
+                <label for="ex1json"><strong>JSON output</strong></label>
+                <textarea id="ex1json" disabled></textarea>
+            </div>
+        </section>
+
+        <section class="txt-center">
+            <h2 class="underline">Geolocation + Weather API</h2>
+            </subtitle>
+            <div id="ex2content" class="content">
+                <div class="row">
+                    <button id="ex2button">Request device Geolocation</button>
+                </div>
+                <div class="center">
+                    <div class="weather-panel">
+                        <div id="ex2Loader">
+                            <span class="loader"></span>
+                        </div>
+                        <div class="weather-icon"></div>
+                        <span class="weather-description"></span>
+                        <span class="weather-temp"></span>
+                        <span class="weather-temp-range"></span>
+                        <span class="weather-time"></span>
+                        <span class="weather-date"></span>
+                        <span class="weather-location"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="txt-center">
+            <h2 class="underline">Pokemon API</h2>
+            </subtitle>
+            <div class="row">
+                <button id="ex3button">Get Pokemon</button>
+            </div>
+            <div id="ex3content" class="content">
+                             
+            </div>
+        </section>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
