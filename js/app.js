@@ -2,19 +2,7 @@
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let people = [];
 
-// Exercise 3 global variables
-const P = new Pokedex.Pokedex();
-const pokeOptions = {
-    protocol: "http",
-    hostname: "127.0.0.1:5500",
-    versionPath: "/api/v2",
-    cache: true,
-    timeout: 60 * 1000,
-    cacheImages: true
-}
-
-
-$('document').ready(function () {
+window.addEventListener("DOMContentLoaded", () => {
     // Exercise 1 setup
 
 

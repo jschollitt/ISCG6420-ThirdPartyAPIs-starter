@@ -380,14 +380,13 @@ td {
 
 #ex3content {
     min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
 }
 
 .poke-panel {
-    width: 31.33333%;
-    margin: 1%;
     position: relative;
-    float: left;
-    box-sizing: inherit;
     text-align: center;
     min-height: 500px;
     border: 1px solid #adadad8a;
